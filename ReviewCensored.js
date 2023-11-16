@@ -27,14 +27,14 @@ exports.censorWord = functions.firestore
   .document("/users/{documentId}")
   .onCreate((snap, context) => {
     const words = [
-      "FUCK",
-      "ASS",
-      "MOTHERFUCKER",
-      "crap",
-      "shit",
-      "puas",
-      "maer",
-      "ass",
+      "****",
+      "***",
+      "*************",
+      "*********",
+      "**********",
+      "**********",
+      "*********",
+      "******",
     ];
     const original = snap.data().review;
     words.forEach((wd) => {
@@ -54,4 +54,3 @@ exports.censorWord = functions.firestore
       }
     });
   });
-
